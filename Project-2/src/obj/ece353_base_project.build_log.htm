@@ -1,0 +1,164 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+I:\353\Project-Dist0.6\Project-Dist0.6\Project-Dist\src\ece353_project.uvprojx
+Project File Date:  05/07/2015
+
+<h2>Output:</h2>
+Rebuild target 'ECE353-Project'
+compiling main.c...
+..\include\game.h(11): warning:  #1-D: last line of file ends without a newline
+  void updateEnemy(int loc );
+..\include\watchdog0.h(6): warning:  #1-D: last line of file ends without a newline
+  void renew_watchdog(void);
+main.c(103): warning:  #177-D: variable "i" was declared but never referenced
+    int i;
+main.c(104): warning:  #177-D: variable "input2" was declared but never referenced
+        char input2[80] ={0};
+main.c(105): warning:  #177-D: variable "x_data" was declared but never referenced
+        uint16_t x_data, y_data;
+main.c(105): warning:  #177-D: variable "y_data" was declared but never referenced
+        uint16_t x_data, y_data;
+main.c(303): warning:  #177-D: variable "wins" was declared but never referenced
+        int wins;
+main.c(385): warning:  #177-D: variable "j" was declared but never referenced
+  int i,j;
+main.c(446): warning:  #177-D: variable "j" was declared but never referenced
+        int i,j;
+main.c(477): warning:  #177-D: variable "j" was declared but never referenced
+        int i,j;
+main.c(511): warning:  #177-D: variable "watchdogBegin" was declared but never referenced
+    bool   watchdogBegin = false; // enable watchdog while seeking enemy
+main.c(513): warning:  #177-D: variable "i" was declared but never referenced
+    int i = 0;
+main.c(517): warning:  #177-D: variable "test" was declared but never referenced
+        bool test;
+main.c(518): warning:  #177-D: variable "rfGpio" was declared but never referenced
+        GPIOA_Type *rfGpio = (GPIOA_Type *)RF_IRQ_GPIO_BASE;
+main.c: 14 warnings, 0 errors
+compiling interrupts.c...
+main.h(3): warning:  #1295-D: Deprecated declaration enterNewFields - give arg types
+  void enterNewFields();
+main.h(4): warning:  #1295-D: Deprecated declaration readOldFields - give arg types
+  void readOldFields();
+main.h(5): warning:  #1295-D: Deprecated declaration joystick - give arg types
+  int joystick();
+..\include\game.h(11): warning:  #1-D: last line of file ends without a newline
+  void updateEnemy(int loc );
+interrupts.c(55): warning:  #550-D: variable "val" was set but never used
+    uint32_t val;
+interrupts.c(336): warning:  #1-D: last line of file ends without a newline
+  }
+interrupts.c(32): warning:  #177-D: variable "Alert_600msCount" was declared but never referenced
+  static int Alert_600msCount = 0;
+interrupts.c: 7 warnings, 0 errors
+compiling boardUtil.c...
+boardUtil.c(107): warning:  #223-D: function "initialize_spi" declared implicitly
+    initialize_spi( LCD_SPI_BASE, 3);
+boardUtil.c(119): warning:  #223-D: function "wireless_set_pin_config" declared implicitly
+    wireless_set_pin_config(
+boardUtil.c(140): warning:  #69-D: integer conversion resulted in truncation
+        gpio_config_enable_input(    RF_GPIO_BASE, RF_MISO_PIN_PCTL);
+boardUtil.c(170): warning:  #223-D: function "initialize_spi" declared implicitly
+    initialize_spi( RF_SPI_BASE, 0);
+boardUtil.c(117): warning:  #550-D: variable "gpioPort" was set but never used
+        GPIOA_Type  *gpioPort;
+boardUtil.c(193): warning:  #223-D: function "eeprom_byte_write" declared implicitly
+    eeprom_byte_write(EEPROM_I2C_BASE,0, myID[0]);
+boardUtil.c(211): warning:  #223-D: function "wireless_configure_device" declared implicitly
+    wireless_configure_device(myID, remoteID ) ;
+boardUtil.c(226): warning:  #223-D: function "eeprom_byte_read" declared implicitly
+    eeprom_byte_read(EEPROM_I2C_BASE,0, &myID[0]);
+boardUtil.c(242): warning:  #223-D: function "eeprom_byte_write" declared implicitly
+      eeprom_byte_write(EEPROM_I2C_BASE,0, myID[0]);
+boardUtil.c(264): warning:  #223-D: function "eeprom_byte_write" declared implicitly
+      eeprom_byte_write(EEPROM_I2C_BASE,5, remoteID[0]);
+boardUtil.c: 10 warnings, 0 errors
+compiling game.c...
+main.h(3): warning:  #1295-D: Deprecated declaration enterNewFields - give arg types
+  void enterNewFields();
+main.h(4): warning:  #1295-D: Deprecated declaration readOldFields - give arg types
+  void readOldFields();
+main.h(5): warning:  #1295-D: Deprecated declaration joystick - give arg types
+  int joystick();
+game.c(378): warning:  #1-D: last line of file ends without a newline
+  }
+game.c: 4 warnings, 0 errors
+compiling adc.c...
+compiling eeprom.c...
+..\drivers\eeprom.c(20): warning:  #550-D: variable "status" was set but never used
+    i2c_status_t status;
+..\drivers\eeprom.c(119): warning:  #177-D: variable "status" was declared but never referenced
+    i2c_status_t status;
+..\drivers\eeprom.c: 2 warnings, 0 errors
+compiling gpioPort.c...
+..\drivers\gpioPort.c(374): warning:  #1-D: last line of file ends without a newline
+  }
+..\drivers\gpioPort.c: 1 warning, 0 errors
+compiling i2c.c...
+compiling io_expander.c...
+compiling ledMatrixChars.c...
+compiling pc_buffer.c...
+compiling spi.c...
+compiling timer0.c...
+compiling uart.c...
+compiling wireless.c...
+compiling fonts.c...
+compiling lcd.c...
+..\drivers\lcd.c(64): warning:  #177-D: function "dogs102_assert_reset" was declared but never referenced
+  __INLINE static void dogs102_assert_reset(void)
+..\drivers\lcd.c: 1 warning, 0 errors
+compiling watchdog0.c...
+..\include\watchdog0.h(6): warning:  #1-D: last line of file ends without a newline
+  void renew_watchdog(void);
+..\drivers\watchdog0.c(6): warning:  #177-D: variable "wdt" was declared but never referenced
+        WATCHDOG0_Type *wdt = ( WATCHDOG0_Type *) WATCHDOG0;
+..\drivers\watchdog0.c(52): warning:  #1-D: last line of file ends without a newline
+  }
+..\drivers\watchdog0.c: 3 warnings, 0 errors
+assembling startup_TM4C123.s...
+compiling system_TM4C123.c...
+linking...
+Program Size: Code=16790 RO-data=5422 RW-data=8832 ZI-data=4632  
+".\obj\ece353_base_project.axf" - 0 Error(s), 42 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.1.1.pack
+                ARM::CMSIS:CORE:3.30.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.30.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.0.0.pack
+                Keil::Device:Startup:1.0.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  I:\353\Project-Dist0.6\Project-Dist0.6\Project-Dist\src\RTE
+  C:\AppV\mdk_510\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include
+  C:\AppV\mdk_510\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.30.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Include file:  Device\Include\TM4C123\TM4C123.h
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Source file:   Device\Source\system_TM4C123.c
+Load "I:\\353\\Project-Dist0.6\\Project-Dist0.6\\Project-Dist\\src\\obj\\ece353_base_project.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+Load "I:\\353\\Project-Dist0.6\\Project-Dist0.6\\Project-Dist\\src\\obj\\ece353_base_project.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
