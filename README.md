@@ -1,5 +1,6 @@
 # tiva-demo-game
-A simple game based on tiva lauchpad. Coded for course project.
+A simple game based on tiva lauchpad. Coded for course project. 
+DO NOT COPY ANY CODE FOR COURSE ASSIGNMENTS
 https://www.youtube.com/watch?v=ZulXPpgqkSY&feature=youtu.be
 
 Difference : 
